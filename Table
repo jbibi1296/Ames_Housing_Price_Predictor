@@ -1,0 +1,226 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Test RMSE</th>
+      <th>Train RMSE</th>
+      <th>Train RMSE % more</th>
+      <th>CV Score</th>
+      <th>Test r2 Score</th>
+      <th>Train r2 Score</th>
+      <th>Best Parameters</th>
+      <th>Features</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Standard Scaler, Polynomial Features and Ridge Model</th>
+      <td>21724.8</td>
+      <td>22544.5</td>
+      <td>-3.64% more</td>
+      <td>0.895614</td>
+      <td>0.912015</td>
+      <td>0.913025</td>
+      <td>{'poly__degree': 2}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Standard Scaler, Polynomial Features and Lasso Model</th>
+      <td>23118.8</td>
+      <td>22103.3</td>
+      <td>4.59% more</td>
+      <td>0.892348</td>
+      <td>0.911082</td>
+      <td>0.911714</td>
+      <td>{'poly__degree': 3}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Standard Scaler, Polynomial Features and Linear Regression</th>
+      <td>23841.3</td>
+      <td>21812.6</td>
+      <td>9.3% more</td>
+      <td>0.897592</td>
+      <td>0.919221</td>
+      <td>0.916851</td>
+      <td>{'poly__degree': 2}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Standard Scaler, Polynomial Features and Elastic Net Model</th>
+      <td>24091.8</td>
+      <td>21721.4</td>
+      <td>10.91% more</td>
+      <td>0.874178</td>
+      <td>0.903158</td>
+      <td>0.917513</td>
+      <td>{'elast__l1_ratio': 1.0, 'poly__degree': 3}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Polynomial Features, Power Transform and Linear Regression</th>
+      <td>24797.4</td>
+      <td>23114.7</td>
+      <td>7.28% more</td>
+      <td>0.899088</td>
+      <td>0.893056</td>
+      <td>0.90533</td>
+      <td>{'poly__degree': 2}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Standard Scaler, Polynomial Features, Power Transform and Ridge Model</th>
+      <td>24808.6</td>
+      <td>24461.3</td>
+      <td>1.42% more</td>
+      <td>0.714808</td>
+      <td>0.893717</td>
+      <td>0.891523</td>
+      <td>{'poly__degree': 4}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Polynomial Features, Power Transform and Elastic Net Model</th>
+      <td>26411.9</td>
+      <td>28535.3</td>
+      <td>-7.44% more</td>
+      <td>0.787732</td>
+      <td>0.888033</td>
+      <td>0.848172</td>
+      <td>{'elast__l1_ratio': 1.0, 'poly__degree': 3}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Standard Scaler, Polynomial Features, Power Transform and Lasso Model</th>
+      <td>27791.6</td>
+      <td>28133.6</td>
+      <td>-1.22% more</td>
+      <td>0.84973</td>
+      <td>0.846091</td>
+      <td>0.850503</td>
+      <td>{'poly__degree': 3}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Standard Scaler, Polynomial Features, Power Transform and Linear Regression</th>
+      <td>28028.7</td>
+      <td>23375.5</td>
+      <td>19.91% more</td>
+      <td>0.872359</td>
+      <td>0.863291</td>
+      <td>0.904843</td>
+      <td>{'poly__degree': 2}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Standard Scaler and Lasso Model</th>
+      <td>28377.8</td>
+      <td>35084.4</td>
+      <td>-19.12% more</td>
+      <td>0.79853</td>
+      <td>0.812226</td>
+      <td>0.766849</td>
+      <td>{}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Polynomial Features, Power Transform and Ridge Model</th>
+      <td>29811.4</td>
+      <td>23286</td>
+      <td>28.02% more</td>
+      <td>0.877482</td>
+      <td>0.834679</td>
+      <td>0.90376</td>
+      <td>{'poly__degree': 4}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Polynomial Features, Power Transform and Lasso Model</th>
+      <td>30765.5</td>
+      <td>30931.7</td>
+      <td>-0.54% more</td>
+      <td>0.802162</td>
+      <td>0.816268</td>
+      <td>0.812445</td>
+      <td>{'poly__degree': 3}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Standard Scaler and Ridge Model</th>
+      <td>33897.5</td>
+      <td>33885.9</td>
+      <td>0.03% more</td>
+      <td>0.80274</td>
+      <td>0.768044</td>
+      <td>0.766257</td>
+      <td>{}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Standard Scaler and Elastic Net Model</th>
+      <td>34434.4</td>
+      <td>33651.9</td>
+      <td>2.33% more</td>
+      <td>0.805662</td>
+      <td>0.773639</td>
+      <td>0.781897</td>
+      <td>{'elast__l1_ratio': 1.0}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Standard Scaler, Polynomial Features, Power Transform and Elastic Net Model</th>
+      <td>34671</td>
+      <td>26883.6</td>
+      <td>28.97% more</td>
+      <td>0.833354</td>
+      <td>0.805055</td>
+      <td>0.867898</td>
+      <td>{'elast__l1_ratio': 1.0, 'poly__degree': 3}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Linear Regression</th>
+      <td>34685.3</td>
+      <td>33599</td>
+      <td>3.23% more</td>
+      <td>0.801722</td>
+      <td>0.774957</td>
+      <td>0.774882</td>
+      <td>{}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Standard Scaler and Linear Regression</th>
+      <td>48733.1</td>
+      <td>30289.5</td>
+      <td>60.89% more</td>
+      <td>0.844984</td>
+      <td>0.646606</td>
+      <td>0.824176</td>
+      <td>{}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Lasso Model</th>
+      <td>75776.4</td>
+      <td>76828.9</td>
+      <td>-1.37% more</td>
+      <td>0.0550821</td>
+      <td>-13.0559</td>
+      <td>-13.3914</td>
+      <td>{}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+    <tr>
+      <th>Ridge Model</th>
+      <td>1.18786e+08</td>
+      <td>1.18833e+08</td>
+      <td>-0.04% more</td>
+      <td>-142292</td>
+      <td>0.00014466</td>
+      <td>0.000310264</td>
+      <td>{}</td>
+      <td>[Quals, SF_Sum, Gr Liv Area, Garage Area, Full...</td>
+    </tr>
+  </tbody>
+</table>
